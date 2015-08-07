@@ -1,0 +1,19 @@
+{
+  "name": "mikemclin/laravel-to-angular-constant",
+  "description": "Output Laravel data as an Angular constant",
+  "require": {
+    "laracasts/utilities": "^2.0"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Mike McLin",
+      "email": "mclinmike@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "MikeMcLin\\Angular\\": "src/"
+    }
+  }
+}
