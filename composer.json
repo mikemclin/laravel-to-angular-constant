@@ -1,6 +1,7 @@
 {
   "name": "mikemclin/laravel-to-angular-constant",
   "description": "Output Laravel data as an Angular constant",
+  "keywords": ["laravel", "angular", "angularjs"],
   "require": {
     "php": ">=5.4.0",
     "illuminate/events": "~5.0",
