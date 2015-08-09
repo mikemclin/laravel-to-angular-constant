@@ -63,7 +63,7 @@ class LaravelToAngularConstant
      */
     protected function buildNgConstant($vars)
     {
-        $js = "angular.module('{$this->module}')";
+        $js = "angular.module('{$this->module}', [])";
         $js .= ".constant('{$this->constant}', {$this->jsonEncode($vars)});";
 
         return $js;
