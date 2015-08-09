@@ -5,7 +5,7 @@ namespace MikeMcLin\Angular;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
-class JavaScriptServiceProvider extends ServiceProvider
+class AngularServiceProvider extends ServiceProvider
 {
     /**
      * Register the service provider.
