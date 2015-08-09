@@ -40,16 +40,18 @@ class LaravelToAngularConstant
     }
 
     /**
-     * Translate the array of PHP vars to
-     * the expected JavaScript syntax.
+     * Bind the given array of variables to the view.
      *
-     * @param  array $vars
-     *
-     * @return array
+     * @param array $variables
      */
-    public function buildJavaScriptSyntax(array $vars)
+    public function put(array $variables)
     {
-        return $this->buildNgConstant($vars);
+        // First, we have to translate the variables
+        // to something JS-friendly.
+        $js = $this->buildNgConstant($variables);
+        // And then we'll actually bind those
+        // variables to the view.
+        $this->viewBinder->bind($js);
     }
 
     /**
