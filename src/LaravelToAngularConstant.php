@@ -2,10 +2,7 @@
 
 namespace MikeMcLin\Angular;
 
-use Laracasts\Utilities\JavaScript\PHPToJavaScriptTransformer;
-use Laracasts\Utilities\JavaScript\ViewBinder;
-
-class LaravelToAngularConstant extends PHPToJavaScriptTransformer
+class LaravelToAngularConstant
 {
     /**
      * The module to nest the constants under.
@@ -17,7 +14,7 @@ class LaravelToAngularConstant extends PHPToJavaScriptTransformer
     /**
      * What binds the variables to the views.
      *
-     * @var \Laracasts\Utilities\JavaScript\ViewBinder
+     * @var \MikeMcLin\Angular\ViewBinder
      */
     protected $viewBinder;
 
@@ -65,9 +62,21 @@ class LaravelToAngularConstant extends PHPToJavaScriptTransformer
     protected function buildNgConstant($vars)
     {
         $js = "angular.module('{$this->module}')";
-        $js .= ".constant('{$this->constant}', {$this->transformArray($vars)});";
+        $js .= ".constant('{$this->constant}', {$this->jsonEncode($vars)});";
 
         return $js;
+    }
+
+    /**
+     * Returns the JSON representation of a value
+     *
+     * @param  mixed $value
+     *
+     * @return string
+     */
+    protected function jsonEncode($value)
+    {
+        return json_encode($value);
     }
 
 }

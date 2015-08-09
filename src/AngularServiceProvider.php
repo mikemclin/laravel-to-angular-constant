@@ -4,7 +4,6 @@ namespace MikeMcLin\Angular;
 
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
-use Laracasts\Utilities\JavaScript\LaravelViewBinder;
 
 class JavaScriptServiceProvider extends ServiceProvider
 {
@@ -44,5 +43,4 @@ class JavaScriptServiceProvider extends ServiceProvider
             'MikeMcLin\Angular\AngularFacade'
         );
     }
-
 }
