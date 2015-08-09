@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | View to Bind Angular constant To
+    | View to Bind Angular Constant To
     |--------------------------------------------------------------------------
     |
     | Set this value to the name of the view (or partial) that

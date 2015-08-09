@@ -2,12 +2,12 @@
 
 ---
 
-### Based on [laracasts/PHP-Vars-To-Js-Transformer](https://github.com/laracasts/PHP-Vars-To-Js-Transformer)
+#### Based on: [laracasts/PHP-Vars-To-Js-Transformer](https://github.com/laracasts/PHP-Vars-To-Js-Transformer)
 
 ---
 
-> This package allows you to easily output Laravel data as an Angular constant.
-> This works great for sharing configuration settings, etc.
+This package allows you to easily output Laravel 5 data as an Angular constant.
+This works great for sharing configuration settings, etc.
 
 ## Basic Usage
 
@@ -80,7 +80,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | View to Bind Angular constant To
+    | View to Bind Angular Constant To
     |--------------------------------------------------------------------------
     |
     | Set this value to the name of the view (or partial) that
